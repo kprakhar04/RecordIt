@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Screen Recorder</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="content">
+    <h1>Screen Recorder</h1>
+    <video muted></video>
+    <br />
+    <button id="startBtn" class="button is-primary">Start</button>
+    <button id="stopBtn" class="button is-warning">Stop</button>
+    <button id="pauseBtn" class="button is-danger is-outlined">Pause</button>
+    <br />
+    <div class="field">
+        <input id="switchColorInfo" type="checkbox" name="switchColorInfo" class="switch is-info" checked="checked">
+        <label for="switchColorInfo">Include Audio</label>
+    </div>
+    <hr />
+    <button id="videoSelectBtn" class="button is-text">
+        Choose a Video Source
+    </button>
+    <script>
+        require('./render.js')
+    </script>
+</body>
+
+</html>
